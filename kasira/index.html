@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Kasira POS | G Labs</title>
+<meta name="description" content="Privacy policy for Kasira POS, the offline point-of-sale app by G Labs. Kasira stores your data on your own device and sends it nowhere.">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="mark">GL</div>
+    <div>
+      <div class="masthead-name">G Labs</div>
+      <div class="masthead-sub"><a href="../">Legal</a> → Kasira POS</div>
+    </div>
+  </header>
+
+  <main>
+    <h1>Kasira POS — Privacy Policy</h1>
+    <p class="updated">Last updated: 8 August 2026</p>
+
+    <p>
+      Kasira POS (“Kasira”, “the app”) is a point-of-sale app for small shops, warungs and cafés,
+      published by <strong>G Labs</strong>. This policy explains what the app does with your
+      information.
+    </p>
+
+    <div class="lede">
+      <p>
+        <strong>The short version: Kasira runs entirely on your device.</strong> It has no server,
+        no account to sign up for, and it does not send your sales data anywhere. Nothing leaves
+        your phone unless you deliberately send it.
+      </p>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>
+      Kasira POS is published by <strong>G Labs</strong>. If you have any question about this policy
+      or about your data, contact us on WhatsApp at
+      <a href="https://wa.me/6285755968441">+62&nbsp;857-5596-8441</a>.
+    </p>
+
+    <h2>2. What Kasira stores on your device</h2>
+    <p>
+      Everything you enter while using Kasira is stored in the app’s own private storage on your
+      device, which other apps cannot read:
+    </p>
+    <ul>
+      <li>
+        <strong>Business details</strong> — store name, address, phone number, receipt footer, logo,
+        tax settings, currency.
+      </li>
+      <li>
+        <strong>Catalogue</strong> — products, prices, categories, barcodes, stock levels, product
+        photos.
+      </li>
+      <li>
+        <strong>Sales records</strong> — orders, order items, payments (cash or QRIS), refunds,
+        voids, discounts, shifts and cash counts, tables and bills.
+      </li>
+      <li>
+        <strong>Staff records</strong> — staff names, their role (owner or staff), and a
+        cryptographic hash of their PIN. PINs themselves are never stored; they are hashed with
+        PBKDF2-SHA256 and cannot be recovered from the stored value.
+      </li>
+      <li>
+        <strong>App settings</strong> — language, currency, theme, printer configuration.
+      </li>
+      <li><strong>A device identifier</strong> — see section 4.</li>
+    </ul>
+    <p>We cannot see any of this. It is on your device, not on a server.</p>
+
+    <h2>3. Permissions Kasira asks for, and why</h2>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Permission</th>
+            <th scope="col">Why Kasira needs it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Camera</th>
+            <td>
+              To scan product barcodes at the till, and to take photos of your products. Images are
+              used on your device only. No video or audio is ever recorded.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Photos / media</th>
+            <td>
+              To let you pick a product photo, your shop logo, or your static QRIS image from your
+              gallery. The chosen image is copied into the app’s private storage.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Bluetooth / Nearby devices</th>
+            <td>
+              To find and connect to your Bluetooth thermal receipt printer. Kasira only discovers
+              and connects to printers.
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">Location<br>(Android&nbsp;11 and older only)</th>
+            <td>
+              On Android 11 and older, the operating system itself required location permission
+              before an app could discover <em>any</em> Bluetooth device. Kasira uses it for nothing
+              else, never records or transmits your location, and does not request it at all on
+              Android 12 or newer.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      You can refuse any of these. Refusing camera means you cannot scan barcodes; refusing
+      Bluetooth means you cannot print. The rest of the app keeps working.
+    </p>
+
+    <h2>4. Device identifier</h2>
+    <p>
+      Kasira derives a device identifier from your device’s Android ID, immediately hashes it with
+      SHA-256, and stores only the shortened hash. It is used to tie an activation key to a single
+      device so a licence cannot be copied between phones, and to label stock movements when you use
+      more than one till.
+    </p>
+    <p>
+      This identifier is included in the pre-filled message when — and only when — <strong>you</strong>
+      tap “Contact support”. It is not collected in the background and not shared with anyone else.
+    </p>
+
+    <h2>5. When information leaves your device</h2>
+    <p>Only ever because you chose to send it:</p>
+    <ul>
+      <li>
+        <strong>Backup / export.</strong> Tapping “Export Data” writes a backup file and hands it to
+        Android’s share sheet. You choose where it goes — Google Drive, WhatsApp, a file on your
+        phone. We never receive it.
+      </li>
+      <li>
+        <strong>Sharing a daily report.</strong> Same: the text goes wherever you send it.
+      </li>
+      <li>
+        <strong>Contacting support.</strong> Opens WhatsApp with a message pre-filled with your store
+        name, hashed device id, licence status, and app version, so we can help without a
+        back-and-forth. You can edit or delete any of it before sending. Once you send it, the
+        message is handled under
+        <a href="https://www.whatsapp.com/legal/privacy-policy">WhatsApp’s own privacy policy</a>.
+      </li>
+    </ul>
+    <p>
+      Kasira makes no other network requests. There is no background sync, no telemetry, and no
+      automatic upload.
+    </p>
+
+    <h2>6. Payments</h2>
+    <p>
+      <strong>Payments you record in Kasira are not processed by Kasira.</strong> When you mark a
+      sale as paid by cash, Kasira does arithmetic and writes a record. When you show a QRIS code,
+      Kasira displays an image <em>you</em> chose from your own gallery. Kasira never touches your
+      customer’s money, card details, or bank account, and it is not connected to any payment
+      gateway.
+    </p>
+    <p>
+      <strong>Buying Kasira itself</strong> is handled by Google Play Billing. Your payment details
+      go to Google, never to us — we only ever learn that a purchase exists. See
+      <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
+    </p>
+
+    <h2>7. What we do <em>not</em> do</h2>
+    <ul>
+      <li>No analytics, crash reporting, or usage tracking of any kind.</li>
+      <li>No advertising and no advertising identifiers.</li>
+      <li>No third-party SDK that collects data.</li>
+      <li>No selling or sharing of your data — we do not hold it, so there is nothing to sell.</li>
+      <li>No accounts, so nothing to link across devices or apps.</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>
+      Kasira is a business tool for shop owners and their staff. It is not directed at children and
+      we do not knowingly collect information from anyone under 18.
+    </p>
+
+    <h2>9. Your control over your data</h2>
+    <ul>
+      <li><strong>See it</strong> — it is all visible in the app.</li>
+      <li>
+        <strong>Correct it</strong> — edit or delete products, staff, orders, and settings in the app.
+      </li>
+      <li>
+        <strong>Take it with you</strong> — Settings → Backup exports everything as a file you own.
+      </li>
+      <li>
+        <strong>Delete it</strong> — uninstalling Kasira permanently erases all of it. Automatic
+        Android backup to Google Drive is deliberately switched off for this app, so uninstalling
+        really does remove your data rather than leaving a copy in the cloud.
+      </li>
+    </ul>
+    <p>
+      Because Kasira has no accounts and holds nothing on a server, there is no account for us to
+      delete and no data of yours for us to hand over or erase on request.
+    </p>
+
+    <h2>10. Security</h2>
+    <p>
+      Data lives in app-private storage that other apps cannot read. Staff PINs are stored only as
+      PBKDF2-SHA256 hashes with a random salt. Activation keys are verified on-device using Ed25519
+      signatures. Please also protect the device itself with a screen lock, and turn on Kasira’s PIN
+      lock if staff share the till.
+    </p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>
+      If this policy changes we will update this page and change the date at the top. Material
+      changes will be noted in the app’s release notes on Google Play.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      Questions, or want a copy of this policy in Bahasa Indonesia? Message us on WhatsApp at
+      <a href="https://wa.me/6285755968441">+62&nbsp;857-5596-8441</a>.
+    </p>
+  </main>
+
+  <footer class="foot">
+    <p>© 2026 G Labs · <a href="../">All G Labs legal documents</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
