@@ -18,10 +18,12 @@ Don't add Markdown pages here expecting them to render.
 ## Layout
 
 ```
-.nojekyll          # no Jekyll build — serve files verbatim
-index.html         # hub: lists every app, links to each policy
-assets/style.css   # shared styling for all pages (app-neutral)
-kasira/index.html  # Kasira POS privacy policy
+.nojekyll                     # no Jekyll build — serve files verbatim
+index.html                    # hub: lists every app, links to each policy
+assets/style.css              # shared styling for all pages (app-neutral)
+kasira/index.html             # Kasira POS privacy policy
+iqro-ummah/index.html         # Iqro Ummah privacy policy
+iqro-ummah/terms/index.html   # Iqro Ummah terms & conditions
 ```
 
 GitHub Pages maps a directory to its `index.html`, so `kasira/index.html` is served at
