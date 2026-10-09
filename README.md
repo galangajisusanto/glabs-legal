@@ -24,6 +24,7 @@ assets/style.css              # shared styling for all pages (app-neutral)
 kasira/index.html             # Kasira POS privacy policy
 iqro-ummah/index.html         # Iqro Ummah privacy policy
 iqro-ummah/terms/index.html   # Iqro Ummah terms & conditions
+budgetku/index.html           # Budgetku privacy policy
 ```
 
 GitHub Pages maps a directory to its `index.html`, so `kasira/index.html` is served at
